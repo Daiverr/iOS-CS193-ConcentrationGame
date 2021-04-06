@@ -13,4 +13,14 @@ struct Card {
     var isMatched: Bool = false
     var identifier: Int
     
+    static var identifierFactory = 0
+    
+    static func getUnicidentifier() -> Int {
+        Card.identifierFactory += 1
+        return Card.identifierFactory
+    }
+    
+    init() {
+        self.identifier = Card.getUnicidentifier()
+    }
 }

@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    lazy var game = Concentration(numberOfPairsOfCards: (cardButtons.count + 1) / 2)
+    
     var flipCount: Int = 0 {
         didSet {
             flipsCountLabel.text = "Flips: \(flipCount)"
@@ -23,14 +25,17 @@ class ViewController: UIViewController {
     var emojiChoices = ["🐱","🐶","🐱","🐶"]
     
     @IBAction func touchCard(_ sender: UIButton) {
-        print("Cat")
-        let cardNumber = cardButtons.firstIndex(of: sender)!
-        print("CardNumber = \(cardNumber)")
-        flipCard(withEmoji: emojiChoices[cardNumber], on: sender)
+        flipCount += 1
+        if let cardNumber = cardButtons.firstIndex(of: sender){
+            //flipCard(withEmoji: emojiChoices[cardNumber], on: sender)
+            game.chooseCard(at: cardNumber)
+        } else {
+            print("Choose another card")
+        }
+        
     }
     
     func flipCard(withEmoji emoji: String, on button: UIButton) {
-        flipCount += 1
         if button.currentTitle == emoji {
             button.setTitle("", for: UIControl.State.normal)
             button.backgroundColor = #colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1)
