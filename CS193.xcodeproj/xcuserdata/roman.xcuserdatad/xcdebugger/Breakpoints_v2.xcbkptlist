@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "8A8313B8-021A-4BB8-A72D-4E1EC92A8E6E"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "872B4B8D-F293-4674-A086-8E7A04AB592D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CS193/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "872B4B8D-F293-4674-A086-8E7A04AB592D - b33ffb8066a1ec66"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CS193.ViewController.flipsCountLabel.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "CS193"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/roman/Desktop/Developer/CS193/CS193/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "872B4B8D-F293-4674-A086-8E7A04AB592D - d25c7e82a94f109a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CS193.ViewController.flipsCountLabel.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "CS193"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/roman/Desktop/Developer/CS193/CS193/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "155">
+               </Location>
+               <Location
+                  uuid = "872B4B8D-F293-4674-A086-8E7A04AB592D - f62000d4ed10eb8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CS193.ViewController.flipsCountLabel.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "CS193"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/roman/Desktop/Developer/CS193/CS193/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "59">
+               </Location>
+               <Location
+                  uuid = "872B4B8D-F293-4674-A086-8E7A04AB592D - 5672647c213155a4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CS193.ViewController.flipsCountLabel.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "CS193"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/roman/Desktop/Developer/CS193/CS193/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "872B4B8D-F293-4674-A086-8E7A04AB592D - c87dd87f540e6bc2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CS193.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; CS193.ViewController"
+                  moduleName = "CS193"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/roman/Desktop/Developer/CS193/CS193/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "269">
+               </Location>
+               <Location
+                  uuid = "872B4B8D-F293-4674-A086-8E7A04AB592D - bd6981c00332778d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CS193.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;CS193.ViewController&gt;"
+                  moduleName = "CS193"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/roman/Desktop/Developer/CS193/CS193/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "201">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9443C2E2-8AF3-491E-AF45-C4DCF2407C6D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CS193/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
