@@ -7,6 +7,18 @@
 
 import UIKit
 
+extension Int {
+    var arc4random: Int {
+        if self > 0 {
+            return Int(arc4random_uniform(UInt32(self)))
+        } else if self < 0 {
+            return -Int(arc4random_uniform(UInt32(abs(self))))
+        } else {
+            return 0
+        }
+    }
+}
+
 class ViewController: UIViewController {
 
     private lazy var game = Concentration(numberOfPairsOfCards: numberOfPairsOfCards)
@@ -25,11 +37,11 @@ class ViewController: UIViewController {
     
     @IBOutlet private var cardButtons: [UIButton]!
     
-    private var emojiChoices = ["🦁","🐷","🐱","🐶", "🐭", "🐵", "🐸", "🐰"]
+    //private var emojiChoices = ["🦁","🐷","🐱","🐶", "🐭", "🐵", "🐸", "🐰"]
     
     private var pictureChoices: [UIImage] = [UIImage(named: "Roman")!, UIImage(named: "Zaval")!,UIImage(named: "Nata")!,UIImage(named: "Ilia")!,UIImage(named: "Bar")!,UIImage(named: "Artur")!,UIImage(named: "Andrey")!]
     
-    private var emoji = [Int:UIImage]()
+    private var picture = [Card:UIImage]()
     
     @IBAction private func touchCard(_ sender: UIButton) {
         flipCount += 1
@@ -61,11 +73,10 @@ class ViewController: UIViewController {
     }
     
     private func emoji(for card: Card) -> UIImage {
-        if emoji[card.identifier] == nil, pictureChoices.count > 0 {
-            let randomIndex = Int(arc4random_uniform(UInt32(pictureChoices.count)))
-            emoji[card.identifier] = pictureChoices.remove(at: randomIndex)
+        if picture[card] == nil, pictureChoices.count > 0 {
+            picture[card] = pictureChoices.remove(at: pictureChoices.count.arc4random)
         }
-        return emoji[card.identifier] ?? UIImage(named: "Roman")!// as! UIImage
+        return picture[card] ?? UIImage(named: "Roman")!// as! UIImage
     }
     
 }
