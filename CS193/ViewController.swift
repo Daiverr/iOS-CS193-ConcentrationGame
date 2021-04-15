@@ -29,17 +29,29 @@ class ViewController: UIViewController {
     
     private(set) var flipCount: Int = 0 {
         didSet {
-            flipsCountLabel.text = "Flips: \(flipCount)"
+            //flipsCountLabel.text = "Flips: \(flipCount)"
+            updateFlipCountLabel()
         }
     }
     
-    @IBOutlet private weak var flipsCountLabel: UILabel!
+    private func updateFlipCountLabel() {
+        flipsCountLabel.attributedText = NSAttributedString(string: "Flips: \(flipCount)", attributes: [
+            .strokeColor : UIColor.yellow,
+            .strokeWidth: 5.0,
+            .foregroundColor: UIColor.yellow
+        ])
+    }
+    
+    @IBOutlet private weak var flipsCountLabel: UILabel! {
+        didSet {
+            updateFlipCountLabel()
+        }
+    }
     
     @IBOutlet private var cardButtons: [UIButton]!
-    
-    //private var emojiChoices = ["🦁","🐷","🐱","🐶", "🐭", "🐵", "🐸", "🐰"]
-    
-    private var pictureChoices: [UIImage] = [UIImage(named: "Roman")!, UIImage(named: "Zaval")!,UIImage(named: "Nata")!,UIImage(named: "Ilia")!,UIImage(named: "Bar")!,UIImage(named: "Artur")!,UIImage(named: "Andrey")!]
+        
+    //private var pictureChoices: [UIImage] = [UIImage(named: "Roman")!, UIImage(named: "Zaval")!,UIImage(named: "Nata")!,UIImage(named: "Ilia")!,UIImage(named: "Bar")!,UIImage(named: "Artur")!,UIImage(named: "Andrey")!]
+    private var pictureChoices: [String] = ["Roman","Zaval","Nata","Ilia","Bar","Artur","Andrey"]
     
     private var picture = [Card:UIImage]()
     
@@ -74,7 +86,8 @@ class ViewController: UIViewController {
     
     private func emoji(for card: Card) -> UIImage {
         if picture[card] == nil, pictureChoices.count > 0 {
-            picture[card] = pictureChoices.remove(at: pictureChoices.count.arc4random)
+            let randomStringIndex = pictureChoices.count.arc4random
+            picture[card] = UIImage(named: pictureChoices.remove(at: randomStringIndex))
         }
         return picture[card] ?? UIImage(named: "Roman")!// as! UIImage
     }
